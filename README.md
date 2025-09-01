@@ -17,18 +17,19 @@ This project displays a **React Big Calendar** with date-wise data. Clicking a d
 1. clone the git repo
 ```bash
 git clone https://github.com/b-moulidhar/react-task-cp360.git
-
+```bash
 
 2. Enter into the folder
 ```bash
 cd react-calendar-bargraph
-
+```bash
 
 3. install dependencies
 ```bash
 npm install
-
+```bash
 
 4. run the code
 ```bash
 npm start
+```bash
