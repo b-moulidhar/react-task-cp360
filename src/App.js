@@ -3,7 +3,10 @@ import CalendarView from './components/CalendarView';
 
 function App() {
   return (
-    <CalendarView/>
+    <div className="App">
+      <h1>React Calendar with Bar Graph</h1>
+      <CalendarView />
+    </div>
   );
 }
 

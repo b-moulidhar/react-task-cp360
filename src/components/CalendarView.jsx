@@ -4,7 +4,7 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedDate } from "../redux/calendarSlice";
-// import BarGraphModal from "./BarGraphModal";
+import BarGraphModal from "./BarGraphModal";
 
 const localizer = momentLocalizer(moment);
 
@@ -43,6 +43,13 @@ const CalendarView = () => {
         onSelectSlot={handleSelectSlot}
         onSelectEvent={handleSelectSlot}
       />
+      {showModal && selectedDate && (
+        <BarGraphModal
+          date={selectedDate}
+          data={data[selectedDate]}
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </div>
   );
 };
